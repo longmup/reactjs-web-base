@@ -1,0 +1,42 @@
+.container {
+    background-image: url("/images/bg_image.jpg");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rebeccapurple;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewImage {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.imageLogo{
+    border-radius: 100px;
+    animation: rotation 8s infinite linear;
+}
+
+.labelResult {
+    font-size: 22px;
+    color: whitesmoke;
+    margin-right: 8%;
+    background-color: rgba(0, 123, 255, .5);
+    padding: 4px 8px 4px 8px;
+    border-radius: 8px;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
